@@ -45,7 +45,8 @@ export default function Home() {
       </header>
 
 
-      <div className=" max-w-[400px] w-full item-center justify-center  flex flex-col  ">
+      <div className=" max-w-[400px] w-full item-center justify-center  flex flex-col mx-[20px]  ">
+
         <div className="bg-[#1111] p-[20px] rounded-xl ">
         <div className="text-[24px] font-bold">Confrim Batch to claim</div>
         <input type="email" className=" my-[15px] h-[45px] w-full rounded-lg px-[10px] " placeholder="Enter Email here" value={email}
@@ -66,7 +67,7 @@ export default function Home() {
       
       {error && <p className="py-[20px]" style={{ color: 'red' }}>🚫 {error}</p>}
       <footer className="absolute bottom-0 py-[20px]">
-      <p>Copyright © {currentYear} DigiCask.Finance All rights reserved.</p>
+      <p className="text-[12px] lg:text-[18px]">Copyright © {currentYear} DigiCask.Finance All rights reserved.</p>
     </footer>
 
         
