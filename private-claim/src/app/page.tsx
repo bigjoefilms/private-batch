@@ -45,7 +45,7 @@ export default function Home() {
       </header>
 
 
-      <div className=" max-w-[400px] w-full item-center justify-center  flex flex-col mx-[20px]  ">
+      <div className=" max-w-[300px] lg;max-w-[400px] w-full item-center justify-center  flex flex-col mx-[20px]  ">
 
         <div className="bg-[#1111] p-[20px] rounded-xl ">
         <div className="text-[24px] font-bold">Confrim Batch to claim</div>
