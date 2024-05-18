@@ -58,10 +58,10 @@ export default function Home() {
 
       </div>
       { pop && 
-      <div className="max-w-[300px] lg:max-w-[500px] w-full h-[150px] rounded-xl bg-[#1111] my-[50px] p-[20px] flex-wrap mx-[20px]">
+      <div className="max-w-[300px] lg:max-w-[500px] w-full h-[150px] rounded-xl bg-[#1111] my-[50px] p-[20px] flex-wrap mx-[20px] ">
         <h1 className="text-[18px] lg:text-[24px] font-bold"> {batch}</h1>
         <p className="mb-[15px]">Use this link to Claim 👇🏽 </p>
-        <Link href={link} className="w-auto h-[35px] rounded-[6px] bg-[#fff] text-[#851b1b]  p-[10px]">https://app.streamflow.finance...</Link>
+        <Link href={link} className="w-auto h-[35px] rounded-[6px] bg-[#fff] text-[#851b1b]  p-[10px] cursor-pointer hover:opacity-80">https://app.streamflow.finance...</Link>
       </div>
       }
       
