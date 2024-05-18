@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { batch1, batch2 } from './data/data.js';
+import { batch1, batch2 } from '../api/data/data.js';
 import Link from "next/link";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
       setLink('https://app.streamflow.finance/airdrop/solana/mainnet/DQn4W3UA52z2ZMGDmkaBpUv1QXpgv1DbQdzngZVM9MXV')
       setPop(true)
     } else {
-      setError('Email not found in either batch.');
+      setError('Email not found wait for next batch.');
       setBatch('Your Batch is Not found')
       setLink('No link for this Round')
       setPop(false)
@@ -34,18 +34,18 @@ export default function Home() {
   };
   return (
     <main className="flex items-center justify-center h-[100vh] flex-col">
-      <header className=" border border-b-[#111] absolute top-0 w-full items-center flex px-[10px] py-[20px] justify-center">
+      <header className="  absolute top-0 w-full items-center flex px-[10px] py-[20px] justify-center bg-[#fff]">
       <Image
                                                 src="/Logo2.png"
                                                 alt="logo"
-                                                width={252}
-                                                height={252}
+                                                width={112}
+                                                height={112}
                                                 className=""
                                             />
       </header>
 
 
-      <div className=" max-w-[300px] lg;max-w-[400px] w-full item-center justify-center  flex flex-col mx-[20px]  ">
+      <div className=" max-w-[300px] lg:max-w-[500px] w-full item-center justify-center  flex flex-col mx-[20px]  ">
 
         <div className="bg-[#1111] p-[20px] rounded-xl ">
         <div className="text-[24px] font-bold">Confrim Batch to claim</div>
@@ -58,7 +58,7 @@ export default function Home() {
 
       </div>
       { pop && 
-      <div className="max-w-[400px] w-full h-[150px] rounded-xl bg-[#1111] my-[50px] p-[20px] flex-wrap">
+      <div className="max-w-[400px] lg:max-w-[500px] w-full h-[150px] rounded-xl bg-[#1111] my-[50px] p-[20px] flex-wrap">
         <h1 className="text-[24px] font-bold"> {batch}</h1>
         <p className="mb-[15px]">Use this link to Claim 👇🏽 </p>
         <Link href={link} className="w-auto h-[35px] rounded-[6px] bg-[#fff] text-[#851b1b]  p-[10px]">https://app.streamflow.finance/airdrop/sol...</Link>
