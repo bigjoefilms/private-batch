@@ -1,4 +1,4 @@
-const batch1 = [
+export const batch1 = [
     "oluwafemialofe@yahoo.com",
     "oluwafemialofe@gmail.com",
     "alexjoel001@proton.me",
