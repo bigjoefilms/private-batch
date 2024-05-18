@@ -48,7 +48,7 @@ export default function Home() {
       <div className=" max-w-[300px] lg:max-w-[500px] w-full item-center justify-center  flex flex-col mx-[20px]  ">
 
         <div className="bg-[#1111] p-[20px] rounded-xl ">
-        <div className="text-[24px] font-bold">Confrim Batch to claim</div>
+        <div className="text-[18px] lg:text-[24px] font-bold">Confrim Batch to claim</div>
         <input type="email" className=" my-[15px] h-[45px] w-full rounded-lg px-[10px] " placeholder="Enter Email here" value={email}
         onChange={(e) => setEmail(e.target.value)}/>
         <div className=" bg-[#008080] py-[10px] cursor-pointer flex items-center justify-center rounded-lg text-[#fff] hover:opacity-85" onClick={checkBatch}>Submit</div>
