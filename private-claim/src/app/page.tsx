@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { batch1, batch2 } from '../api/data/data.js';
+import { batch1, batch2,batch3 } from '../api/data/data.js';
 import Link from "next/link";
 
 export default function Home() {
@@ -24,7 +24,11 @@ export default function Home() {
       setBatch(' Your part of Batch 2 ');
       setLink('https://app.streamflow.finance/airdrop/solana/mainnet/DQn4W3UA52z2ZMGDmkaBpUv1QXpgv1DbQdzngZVM9MXV')
       setPop(true)
-    } else {
+    }else if (batch3.includes(email)) {
+      setBatch(' Your part of Batch 3 ');
+      setLink('https://app.streamflow.finance/airdrop/solana/mainnet/BJGv8KnPNFgjiBkRrRjyvAfue5gGDFomng7a9FhdmwNC')
+      setPop(true)
+     } else {
       setError('Email not found wait for next batch.');
       setBatch('Your Batch is Not found')
       setLink('No link for this Round')
